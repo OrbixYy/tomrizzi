@@ -1,0 +1,81 @@
+<head>
+  <title>Curriculum vitæ</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="cv_RE.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="js/script.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+
+<div class="inner-width">
+  <h1>I</h1>
+  <div class="menu-icon">
+    <i class="fas fa-align-right"></i>
+  </div>
+</div>
+</header>
+
+<div class="navigation-menu">
+  <nav>
+    <li><a class="active" href="CV.html">[I] A propos de moi</a></li>
+    <li><a class="active" href="CV-exp.html">[II] Expériences</a></li>
+    <li><a class="active" href="Cv-formation.html">[III] Formations</a></li>
+    <li><a href="CV-Comp.html">[IV] Compétences</a></li>
+    <li><a href="CV-ci.html">[V] Loisirs / CI</a></li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li><a class="rm" href="menu.html">Retourner au menu</a></li>
+  </nav>
+</div>
+
+  <section>
+      <div class="photo">
+          <img src="img/profil.png" alt="Ma photo de profil">
+      </div>
+      <div class="prez">
+          <h2>A propos de moi</h2>
+          <p>Je m'appelle Tom, j'ai 18 ans, je suis présentement à la recherche d'expérience dans un domaine qui peut m'apporter des compétences et des traits notamment de la rigueur, c'est pour cela que je souhaite compléter mes semaines à côté de mes études, et en plus de cela pouvoir percevoir une rémunération à épargner pour mes futurs projets. Je suis disponible tous les soirs de 18 h 30 jusqu'à 22h, le mieux pour moi serait de travailler du lundi au jeudi, car cela me laissera le vendredi ainsi que le week-end disponible pour travailler mes cours. Je me dirige vers ce métier ou polyvalence permet l'épanouissement, ce qui ne cesse de m'intriguer par les opportunités qu'il peut m'apporter, je pense à l'expérience et les compétences dans l'art du social, l'art de la pizza, le travail d'équipe qui m'inspire beaucoup par la cohésion. C'est donc le domaine qui attise le plus mon attention et pourra m'apporter une grande motivation aux quotidiens et donc m'apporter une meilleure productivité permanente. J'adore également entreprendre et organiser des projets, je suis très ambitieux, peut-être un peu trop parfois, mais la motivation que j'apporte à chaque projet que j'ai envie de réaliser est considérable. Je ne fais pas les choses à moitié et je suis curieux d'apprendre cet environnement qui m'apportera sans en douter un enrichissement professionnel et personnel.</p>
+      </div>
+      <div class="contact">
+          <h2>Informations</h2>
+          <div class="contact-flex">
+           <p><strong>Nom :</strong></p>  
+              <p>Rizzi Tom</p>
+          </div>
+          <div class="contact-flex">
+              <p><strong>Téléphone :</strong></p>
+              <p>07.70.02.65.28</p>
+          </div>
+          <div class="contact-flex">
+              <p><strong>Email :</strong></p>
+              <p><a href="rizzitom60@gmail.com">rizzitom60@gmail.com</a></p>
+          </div>
+          <p><a class="rm" href="CV-exp.html">Page suivante</a></p>
+          <script>
+            $(".menu-icon").click(function(){
+              $(this).toggleClass("active");
+              $(".navigation-menu").toggleClass("active");
+              $(".menu-icon i").toggleClass("fa-times");
+            });
+          </script>
+        </body>
+        </html>
+
+ 

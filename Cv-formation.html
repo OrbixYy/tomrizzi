@@ -1,0 +1,113 @@
+<head>
+  <title>Curriculum vitæ</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="cv_RE.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="js/script.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+
+<div class="inner-width">
+  <h1>III</h1>
+  <div class="menu-icon">
+    <i class="fas fa-align-right"></i>
+  </div>
+</div>
+</header>
+
+<div class="navigation-menu">
+  <nav>
+    <li><a href="CV.html">[I] A propos de moi</a></li>
+    <li><a href="CV-exp.html">[II] Expériences</a></li>
+    <li><a href="Cv-formation.html">[III] Formations</a></li>
+    <li><a href="CV-Comp.html">[IV] Compétences</a></li>
+    <li><a href="CV-ci.html">[V] Loisirs / CI</a></li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li><a class="rm" href="menu.html">Retourner au menu</a></li>
+  </nav>
+</div>
+
+<section>
+  <h2 class="h2-exp">Formation</h2>
+  <p><a class="rm" href="CV-Comp.html">Page suivante</a></p>
+  <div class="exp">
+      <div class="exp-logo">
+          <a href="#"><img src="img/OIP (4).jpg" alt=""></a>
+      </div>
+      <div class="exp-info">
+          <h3>Collège Mont-Sauvy</h3>
+          <h4>2016 - 2020</h4>
+      </div>
+      <div class="exp-desc">
+          <p>Brevet avec mention bien.</p>
+      </div>
+  </div>
+  <div class="exp">
+      <div class="exp-logo">
+          <a href="#"><img src="img/OIP (6).jpg" alt=""></a>
+      </div>
+      <div class="exp-info">
+          <h3>Bac | Lycée de Châteaurenard</h3>
+          <h4>2020 - 2023</h4>
+      </div>
+      <div class="exp-desc">
+          <p>Pas encore passé</p>
+      </div>
+  </div>
+  <div class="exp">
+    <div class="exp-logo">
+        <a href="#"><img src="img/miage.png" alt=""></a>
+    </div>
+    <div class="exp-info">
+        <h3>Licence Miage - Mention Informatique</h3>
+        <h4>2023 - 2026</h4>
+    </div>
+    <div class="exp-desc">
+        <p>(Les études que je vais faire)</p>
+    </div>
+</div>
+  <h2>Les Certifications :</h2>
+  <div class="exp">
+    <div class="exp-logo">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div class="exp-info">
+        <h3>Certification Dyma</h3>
+        <h4>11 juin 2021</h4>
+    </div>
+    <div class="exp-desc">
+        <p>HTML & CSS : Langages pour la création de pages Web statiques.</p>
+        <p><a class="rm" href="img/certification.pdf">Voir la certification</a></p>
+        
+        
+    </div>
+</div>
+</section>
+
+<script>
+  $(".menu-icon").click(function(){
+    $(this).toggleClass("active");
+    $(".navigation-menu").toggleClass("active");
+    $(".menu-icon i").toggleClass("fa-times");
+  });
+</script>
+</body>
+</html>

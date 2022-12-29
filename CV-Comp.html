@@ -1,0 +1,88 @@
+<head>
+  <title>Curriculum vitæ</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="cv_RE.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="js/script.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+
+<div class="inner-width">
+  <h1>IV</h1>
+  <div class="menu-icon">
+    <i class="fas fa-align-right"></i>
+  </div>
+</div>
+</header>
+
+<div class="navigation-menu">
+  <nav>
+    <li><a href="CV.html">[I] A propos de moi</a></li>
+    <li><a href="CV-exp.html">[II] Expériences</a></li>
+    <li><a href="Cv-formation.html">[III] Formations</a></li>
+    <li><a href="CV-Comp.html">[IV] Compétences</a></li>
+    <li><a href="CV-ci.html">[V] Loisirs / CI</a></li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li><a class="rm" href="menu.html">Retourner au menu</a></li>
+  </nav>
+</div>
+
+<section>
+  
+  <h2 class="h2-exp">Compétences</h2>
+  <p><a class="rm" href="CV-ci.html">Page suivante</a></p>
+  <h3 class="h3gauche">Professionnelles</h3>
+  <br>
+  <br>
+  <div class="comp">
+      <p>Outils informatiques</p>
+      <div class="conteneur-barre"><span class="barre c95"></span></div>
+  </div>
+  <div class="comp">
+      <p>Créativité</p>
+      <div class="conteneur-barre"><span class="barre c75"></span></div>
+  </div>
+  <div class="comp">
+      <p>Flexibilité</p>
+      <div class="conteneur-barre"><span class="barre c50"></span></div>
+  </div>
+  <div class="comp">
+      <p>Relationnel</p>
+      <div class="conteneur-barre"><span class="barre c85"></span></div>
+  </div>
+  <br>
+  <h3 class="h3gauche">Personnelles</h3>
+  <br>
+  <br>
+      <p>Ambitieux</p><br>
+      <p>Optimiste</p><br>
+      <p>Sérieux</p><br>
+      <p>Autonome</p>
+</section>
+<script>
+  $(".menu-icon").click(function(){
+    $(this).toggleClass("active");
+    $(".navigation-menu").toggleClass("active");
+    $(".menu-icon i").toggleClass("fa-times");
+  });
+</script>
+</body>
+</html>
